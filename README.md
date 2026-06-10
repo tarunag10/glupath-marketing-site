@@ -58,7 +58,7 @@ gh repo create glupath-marketing-site --public --source=. --remote=origin --push
 Record the final GitHub repository URL here after creation:
 
 ```text
-TODO_GITHUB_REPO_URL
+https://github.com/tarunag10/glupath-marketing-site
 ```
 
 ## Vercel Deployment
