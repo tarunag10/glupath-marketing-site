@@ -20,6 +20,9 @@ npm run build
 - Privacy Policy: https://tarunag10.github.io/glupath-privacy-policy/
 - Support: https://tarunag10.github.io/glupath-privacy-policy/#support
 - Proposed Vercel URL: https://GluPath.vercel.app
+- Live Vercel URL: https://glupath.vercel.app
+
+Vercel requires lowercase project slugs, so the deployed alias is `glupath.vercel.app`. Domain casing is case-insensitive in browsers.
 
 ## App Store URL TODO
 
@@ -72,7 +75,7 @@ vercel --prod
 During setup:
 
 - Project/site name: `GluPath`
-- Production URL target: `https://GluPath.vercel.app`
+- Production URL target: `https://glupath.vercel.app`
 - GitHub repository: `glupath-marketing-site`
 
 After deployment, verify:
