@@ -141,7 +141,7 @@ function App() {
         <div className="screenshot-row">
           {screenshots.map(([label, src]) => (
             <figure className="phone-frame" key={label}>
-              <img src={src} alt={`GluPath ${label} screenshot`} />
+              <img src={src} alt={`GluPath ${label} screenshot`} loading="lazy" decoding="async" />
               <figcaption>{label}</figcaption>
             </figure>
           ))}

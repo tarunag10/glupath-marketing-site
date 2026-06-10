@@ -83,6 +83,9 @@ a {
 }
 
 .nav-links a {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
 }
 
@@ -102,8 +105,8 @@ a {
 }
 
 .hero-icon {
-  width: 78px;
-  height: 78px;
+  width: clamp(64px, 9vw, 78px);
+  height: clamp(64px, 9vw, 78px);
   border-radius: 20px;
   box-shadow: 0 18px 48px rgba(0, 105, 128, 0.18);
 }
@@ -184,6 +187,8 @@ h1 {
 .hero-panel img {
   display: block;
   width: 100%;
+  max-height: 72vh;
+  object-fit: contain;
   height: auto;
   border-radius: 24px;
 }
@@ -452,21 +457,35 @@ h3 {
 
 @media (max-width: 640px) {
   .nav {
-    align-items: flex-start;
+    width: calc(100% - 24px);
+    align-items: center;
+    padding: 12px 0;
   }
 
   .nav-links {
     justify-content: flex-end;
-    gap: 12px;
-    font-size: 0.82rem;
+    gap: 4px;
+    font-size: 0.78rem;
+  }
+
+  .nav-links a {
+    min-height: 44px;
+    padding: 0 7px;
   }
 
   .hero {
+    width: calc(100% - 32px);
     gap: 30px;
+    padding-top: 16px;
   }
 
   h1 {
-    font-size: clamp(3rem, 15vw, 4.8rem);
+    font-size: clamp(2.8rem, 13vw, 4rem);
+    line-height: 0.98;
+  }
+
+  .lede {
+    font-size: 1.05rem;
   }
 
   .hero-actions {
@@ -477,6 +496,22 @@ h3 {
   .app-store-button,
   .secondary-button {
     width: 100%;
+  }
+
+  .app-store-button {
+    min-height: 52px;
+    padding: 0 16px;
+    font-size: 0.95rem;
+  }
+
+  .hero-panel {
+    padding: 9px;
+    border-radius: 28px;
+  }
+
+  .hero-panel img {
+    max-height: none;
+    border-radius: 22px;
   }
 
   .section {
